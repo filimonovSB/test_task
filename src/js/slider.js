@@ -3,7 +3,7 @@ const mobileBtn = document.querySelector( '#sliderBtnMobile ')
 const desktopContent = document.querySelector( '.slider__content-desctop ')
 const mobileContent = document.querySelector( '.slider__content-mobile ')
 
-desktopBtn.addEventListener( 'click ', ()=>{
+desktopBtn.addEventListener( 'click', ()=>{
   debugger
   mobileContent.classList.remove('active')
   desktopContent.classList.add('active')
@@ -11,7 +11,7 @@ desktopBtn.addEventListener( 'click ', ()=>{
   desktopBtn.classList.add('active')
 })
 
-mobileBtn.addEventListener( 'click ', ()=>{
+mobileBtn.addEventListener( 'click', ()=>{
   debugger
   mobileContent.classList.add('active')
   desktopContent.classList.remove('active')
