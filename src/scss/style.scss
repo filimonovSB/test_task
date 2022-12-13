@@ -1,0 +1,66 @@
+@import "reset";
+@import "colors";
+@import "rigthside-menu";
+@import "accordion";
+@import "items";
+@import "custom-button";
+@import "custom-checkbox";
+@import "custom-input";
+@import "custom-radio";
+@import "custom-select";
+@import "fonts";
+@import "global";
+@import "slider";
+@import "media";
+@import "user";
+
+.lead{
+    font-family: 'GraphikLCG-Regular';
+    font-size: 24px;
+    line-height: 32px;
+}
+.big{
+    font-family: 'GraphikLCG-Regular';
+    font-size: 18px;
+    line-height: 28px;
+}
+.litle{
+    font-family: 'GraphikLCG-Regular';
+    font-size: 14px;
+    line-height: 20px;
+} 
+.flex{
+    padding: 32px 240px 64px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.label{
+    display: flex;
+    flex-direction: column;
+}
+.parting{
+    margin-top: 48px;
+    &__level{
+        margin-top: 16px;
+    }
+    &__text{
+        margin-top: 64px;
+    }
+}
+.grid {
+    &__text {
+        margin-top: 24px;
+        margin-bottom: -16px;
+    }
+    &__image{
+        margin-top: 48px;
+        max-width: 100%;
+    }
+}
+.typography {
+    &__text {
+        margin-top: 24px;
+    }
+}
+ 

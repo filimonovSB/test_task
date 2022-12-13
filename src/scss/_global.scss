@@ -1,0 +1,113 @@
+*{
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    font-family: "GraphikLCG-Regular";
+}
+h1{
+    font-family: "GraphikLCG-Bold";
+    font-size: 48px;
+    line-height: 56px;
+}
+h2{
+    font-family: "GraphikLCG-Bold";
+    font-size: 32px;
+    line-height: 40px;
+}
+h3{
+    font-family: "GraphikLCG-Medium";
+    font-size: 24px;
+    line-height: 32px;
+}
+h4{
+    font-size: 18px;
+    line-height: 28px;
+}
+p{ 
+    max-width: 592px;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'GraphikLCG-Regular';
+}
+section{
+    margin-top: 80px;
+}
+article{
+    margin-top: 64px;
+}
+hr{
+    margin: 0;
+    background: $grey-light;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.laylout{
+    display: grid;
+    grid-template-columns: repeat(12, minmax(60px,80px));
+    grid-auto-rows: 40px auto 40px ;
+    gap: 32px;
+    max-width:  1312px;
+    min-width: 1072px;
+    padding: 10px;
+}
+.header { 
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    padding-top: 160px;
+    padding-bottom: 48px;
+    font-family: 'GraphikLCG-Regular';
+    font-size: 14px;
+    line-height: 20px;
+    color: $black;
+}
+.footer__inner{
+    display: inline-block;
+}
+.nav-menu {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    &__list {
+        position: fixed;
+        margin-top: 216px;
+    }
+    &__item {
+        margin-bottom: 16px;
+    }
+    &__link {
+        font-family: 'GraphikLCG-Regular';
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        cursor: pointer;
+        color: $grey;
+    }
+    &__link:hover{
+        color: $black;
+    }
+    &__link.active{
+        color: $blue;
+    }
+}
+.main{
+    grid-column-start: 4;
+    grid-column-end: 13;
+}
+.auxiliary{
+    font-family: "GraphikLCG-Regular";
+    font-size: 14px;
+    line-height: 20px;
+} 
+.grey{
+    color: rgba(125, 125, 125, 1);
+}

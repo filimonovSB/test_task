@@ -1,0 +1,92 @@
+.rigthside-menu {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    padding: 8px;
+    transform: translateX(100%);
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    transition: all 0.4s ease-in-out;
+    &-btn__open{
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+    &.active   {
+        transform: translateX(0%);
+    }
+    &__inner {
+        height: 100%;
+        width: 56.5%;
+        padding: 24px 0px 24px 56px;
+        background-color: #fff;
+    }
+    &__close-btn{
+        margin-top: 20px;
+        margin-right: 55px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    &__close img{
+        width: 24px;
+        height: 24px;
+    }
+}
+.rigthside-menu {
+ 
+		&__wrap {
+            padding-left: 104px;
+            padding-top: 48px;
+		}
+		&__text { 
+            max-width: 500px;
+            margin-top: 24px;
+            margin-bottom: 32px;
+            font-family: "GraphikLCG-Regular";
+            font-size: 16px;
+            line-height: 24px;
+		}
+        &__number{
+            font-family: 'GraphikLCG-Medium';
+            font-size: 18px;
+            line-height: 28px;
+            color: $black;
+        }
+        &__link-wrap {
+            position: absolute;
+            bottom: 59px;  
+            text-align: center; 
+		}
+		&__link {
+            position: relative;
+            padding-left: 72px;
+            font-family: 'GraphikLCG-Medium';
+            font-size: 16px;
+            line-height: 24px;
+            color: $blue;
+            &::before{
+                position: absolute;
+                content: "";
+                height: 48px;
+                width: 48px;
+                left: 0;
+                top: -17px;
+                background-image: url("../img/icon_messagers.svg");
+                background-size: contain;
+            }
+		}
+        &__top{
+            display: flex;
+            align-items: center;
+        }
+        &__top-text{
+            margin-left: 64px;
+        }
+}

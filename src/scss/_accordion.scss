@@ -1,0 +1,60 @@
+.accordions{ 
+    margin-top: 17px;
+}
+.accordion {
+    position: relative;
+    padding-bottom: 15px;
+    padding-top: 9px;
+    width: 100%;  
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid  $grey-light;
+    background-color: #fff;
+    color: $grey;
+    cursor: pointer;
+    outline: none;
+    font-family: 'GraphikLCG-Medium';
+    font-size: 16px;
+    line-height: 24px;
+    transition: 0.5s;
+    &:hover{
+        color: $black;
+        border-bottom: 1px solid   $blue;
+    }
+    &.active{
+        border: none;
+    }
+    &.active,
+    &.active:hover{
+        color: $blue;
+        background-color: #fff;
+    }
+    &:after {
+        position: absolute;
+        right: 0;
+        width: 9px;
+        height: 6px;
+        content: '';
+        background-image: url(../img/arrow_up.svg);
+    }
+    &.active:after {
+        position: absolute;
+        right: 0;
+        width: 9px;
+        height: 6px;
+        content: '';
+        background-image: url(../img/arrow_downsvg.svg);
+    }
+}
+.panel {
+    height:  0px;
+    overflow: hidden;
+    color: #212121;
+    background-color: #fff;
+    transition: all 0.5s ease ;  
+    &.active{
+        border-bottom: 1px solid $blue;
+        padding-top: 9px;
+        padding-bottom: 30px;
+    }
+}

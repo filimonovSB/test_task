@@ -1,0 +1,23 @@
+.items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 48px;
+}
+.item {
+   max-width: 176px;
+   &__title {
+    margin-bottom: 8px;
+    font-family: 'GraphikLCG-Regular';
+    font-size: 14px;
+    line-height: 20px;
+    color: $grey;
+    }
+    &__value {
+        font-family: 'GraphikLCG-Regular';
+        font-size: 24px;
+        line-height: 32px;
+        color: $black;
+    }
+}

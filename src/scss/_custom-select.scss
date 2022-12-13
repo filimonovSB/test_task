@@ -1,0 +1,70 @@
+.custom-select {   
+    margin-top: 20px;
+    &__toggle {
+        position: relative;
+        width: 280px;
+        padding-right: 25px;
+        padding-bottom: 6px;
+        border: none;
+        border-bottom: 2px solid #AEADAE;
+        font-family: 'GraphikLCG-Regular';
+        font-size: 16px;
+        line-height: 24px;
+        background: transparent;
+        cursor: pointer;
+    }
+    &__toggle::after{
+        position: absolute;
+        right: 0;
+        width: 9px;
+        height: 6px;
+        content: '';
+        background-image: url(../img/arrow_downsvg.svg);
+    }
+    &__toggle.active {
+        border-bottom: 2px solid $blue;
+    }
+    &__toggle.active::after{
+        position: absolute;
+        right: 0;
+        width: 9px;
+        height: 6px;
+        content: '';
+        background-image: url(../img/arrow_up.svg);
+    }
+    &__toggle:hover{
+        border-bottom: 2px solid $blue;
+    }
+    &__dropdown {
+        width: 280px;
+        pointer-events: none;
+        opacity: 0;
+    }
+    &__dropdown.active{
+        pointer-events: all;
+        opacity: 1;
+    }
+    &__option {
+        padding: 8px 24px;
+        font-family: 'GraphikLCG-Regular';
+        font-size: 16px;
+        line-height: 24px;
+        color: $black;
+        cursor: pointer;
+    }
+    &__option.active {
+        color: #3D28E1;
+    }
+    &__option.active {
+        color: #3D28E1;
+    }
+    &__option:hover {
+        color: white;
+        background: $blue;
+    }
+    &__text {
+        margin-top: 24px;
+        margin-bottom: 48px;
+    }
+}
+ 
